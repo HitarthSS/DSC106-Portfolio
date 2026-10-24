@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Project 2: Persuasive or Deceptive Visualization?",
+    "year": 2026,
+    "image": "project2/visualization-1.png",
+    "description": "Do more complaints against an NYPD officer indicate more substantiated misconduct? Two views of the same complaint histories show how counts and rates frame different arguments. Read the report.",
+    "url": "project2/"
+  },
+  {
+    "title": "Lab 4: JavaScript II",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Loaded projects from a JSON file, reused JavaScript functions on the home page, and displayed GitHub profile statistics from an API."
+  },
+  {
+    "title": "Lab 3: Introduction to JavaScript",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Created automatic navigation, added a theme switcher that saves preferences, and improved the contact form using JavaScript."
+  },
+  {
+    "title": "Lab 2: Styling with CSS",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Styled the portfolio with a responsive project grid, an aligned contact form, navigation hover styles, and consistent typography."
+  },
+  {
+    "title": "Lab 1: Introduction to the Web Platform",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built the initial portfolio using HTML, including a home page, projects page, contact form, and resume."
+  },
+  {
+    "title": "Surgical Scene Reconstruction",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Converted stereo recordings and depth estimates into an interactive surgical simulation with reconstructed needles, sutures, and a controllable robot."
+  },
+  {
+    "title": "Suture Reconstruction and Tracking",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Combined segmentation, stereo depth, curve fitting, and filtering to reconstruct and track sutures in 3D."
+  },
+  {
+    "title": "Defense Simulator Project",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a defense simulation project using language models and a Mapbox interface to explore tactical response and threat assessment."
+  },
+  {
+    "title": "Real Time Emotion Classification Model",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Developed a model based on EMOTIC that combines object detection and environmental context to classify emotions."
+  },
+  {
+    "title": "EEG Affect Estimation",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Used EEG preprocessing, signal features, and a neural network to estimate valence and arousal."
+  },
+  {
+    "title": "FRC Robot Control and Navigation",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built swerve drive control and autonomous navigation using AprilTags, an IMU, and wheel odometry."
+  },
+  {
+    "title": "Project 1: Expository Visualization (Placeholder)",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Placeholder for the Project 1 visualization and its writeup."
+  }
+]
