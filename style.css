@@ -109,6 +109,71 @@ form label {
   font-size: 2em;
 }
 
+#projects-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+#projects-plot path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#projects-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+#projects-plot .selected,
+.legend .selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+#projects-plot path.selected {
+  fill: var(--color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  flex: 1;
+  min-width: 9em;
+  list-style: none;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  padding: 1em;
+  margin-block: 1em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend .swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  border-radius: 0.2em;
+  background-color: var(--color);
+}
+
+.searchBar {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
