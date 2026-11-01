@@ -32,7 +32,7 @@
   },
   {
     "title": "Surgical Scene Reconstruction",
-    "year": 2026,
+    "year": 2025,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Converted stereo recordings and depth estimates into an interactive surgical simulation with reconstructed needles, sutures, and a controllable robot."
   },
@@ -56,13 +56,13 @@
   },
   {
     "title": "EEG Affect Estimation",
-    "year": 2024,
+    "year": 2023,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Used EEG preprocessing, signal features, and a neural network to estimate valence and arousal."
   },
   {
     "title": "FRC Robot Control and Navigation",
-    "year": 2024,
+    "year": 2022,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Built swerve drive control and autonomous navigation using AprilTags, an IMU, and wheel odometry."
   },
