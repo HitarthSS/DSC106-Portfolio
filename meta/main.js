@@ -112,8 +112,8 @@ function renderLanguageBreakdown(selectedCommits) {
 
   for (const [language, count] of breakdown) {
     const stat = container.append('div');
-    stat.append('dt').text(language);
-    stat.append('dd').text(`${count} lines (${format(count / lines.length)})`);
+    stat.append('dt').text(language.toUpperCase());
+    stat.append('dd').text(`${count} lines\n(${format(count / lines.length)})`);
   }
 }
 
