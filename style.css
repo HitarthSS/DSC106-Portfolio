@@ -122,6 +122,89 @@ form label {
   font-size: 2em;
 }
 
+.commit-filter {
+  display: flex;
+}
+
+.commit-filter label {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+#commit-time {
+  margin-left: auto;
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-story .step {
+  padding-bottom: 55vh;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+    overflow-wrap: anywhere;
+  }
+
+  small {
+    display: block;
+    opacity: 0.75;
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+}
+
+#files .loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
+}
+
 #chart .gridlines {
   opacity: 0.15;
 }
@@ -167,9 +250,13 @@ dl.info[hidden]:not(:hover, :focus-within) {
 }
 
 #chart .dots circle {
-  transition: transform 200ms;
+  transition: cx 200ms, r 200ms, transform 200ms;
   transform-origin: center;
   transform-box: fill-box;
+
+  @starting-style {
+    r: 0;
+  }
 }
 
 #chart .dots circle:hover {
@@ -178,6 +265,29 @@ dl.info[hidden]:not(:hover, :focus-within) {
 
 #chart .dots circle.selected {
   fill: #ff6b6b;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+#chart .selection {
+  fill-opacity: 0.1;
+  stroke: currentColor;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+#language-breakdown {
+  font: 1.25em/1.4 ui-monospace, monospace;
+}
+
+#language-breakdown dd {
+  font-size: inherit;
+  white-space: pre-line;
 }
 
 #projects-plot {
